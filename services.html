@@ -2,6 +2,14 @@
 <html lang="en" class="scroll-smooth">
 
 <head>
+    <style>
+      .logo-text { color: #000000; }
+      .logo-tagline { color: #555555; }
+      @media (prefers-color-scheme: dark) {
+        .logo-text { color: #ffffff; }
+        .logo-tagline { color: #aaaaaa; }
+      }
+    </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- HTML Meta Tags -->
@@ -107,9 +115,9 @@
         <div class="flex flex-col">
           <span class="text-2xl font-bold tracking-tight flex items-center">
             <span class="text-[#00ed64] mr-0.5">/</span>
-            <span class="text-white">PRAVEEN</span>
+            <span class="logo-text">PRAVEEN</span>
           </span>
-          <span class="text-[10px] text-slate-400 tracking-widest uppercase ml-3">Engineering Excellence</span>
+          <span class="logo-tagline" style="font-size:10px; letter-spacing:0.15em; text-transform:uppercase; margin-left:0.75rem;">Engineering Excellence</span>
         </div>
       </a>
 
