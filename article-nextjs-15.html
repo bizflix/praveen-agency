@@ -130,6 +130,16 @@
         </div>
     </nav>
 
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-[#000d14] border-t border-[#00ed64]/10">
+      <div class="max-w-7xl mx-auto px-6 py-4 flex flex-col gap-4">
+        <a href="services.html" class="text-slate-400 hover:text-[#00ed64] transition-colors py-2">Services</a>
+        <a href="insights.html" class="text-slate-400 hover:text-[#00ed64] transition-colors py-2">Insights</a>
+        <a href="about.html" class="text-slate-400 hover:text-[#00ed64] transition-colors py-2">About</a>
+        <a href="contact.html" class="bg-[#00ed64] text-[#000d14] px-6 py-3 rounded-md hover:bg-[#00ed64]/90 transition-colors text-center font-medium">Start Project</a>
+      </div>
+    </div>
+
     <article class="pt-40 pb-24 max-w-3xl mx-auto px-6">
         <div class="mb-16 border-b border-white/10 pb-16">
             <div class="flex items-center gap-4 text-sm text-[#00ed64] font-mono mb-6">
@@ -221,6 +231,18 @@ export default function Signup() {
             </a>
         </div>
     </article>
+
+<script>
+  // Mobile menu toggle
+  const mobileMenuButton = document.getElementById('mobile-menu-button');
+  const mobileMenu = document.getElementById('mobile-menu');
+  
+  if (mobileMenuButton && mobileMenu) {
+    mobileMenuButton.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  }
+</script>
 </body>
 
 </html>
