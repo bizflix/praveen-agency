@@ -1,0 +1,16 @@
+# Robots.txt for Praveen & Partners
+# https://praveen-agency.vercel.app/robots.txt
+
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://praveen-agency.vercel.app/sitemap.xml
+
+# Crawl-delay (optional, helps with server load)
+Crawl-delay: 1
+
+# Block common bot paths (if any)
+Disallow: /api/
+Disallow: /*.json$
+Disallow: /admin/

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praveen and Partners | Enterprise Web Development & Digital Transformation | Award-Winning Solutions</title>
+    <meta name="description"
+        content="Award-winning web development by Praveen and Partners. We engineer premium websites, web apps & digital platforms that accelerate growth. Trusted by industry leaders">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://praveenpartners.com/article-rust-tools.html">
+    <meta property="og:title"
+        content="Praveen and Partners | Enterprise Web Development & Digital Transformation | Award-Winning Solutions">
+    <meta property="og:description"
+        content="Award-winning web development by Praveen and Partners. We engineer premium websites, web apps & digital platforms that accelerate growth. Trusted by industry leaders">
+    <meta property="og:image" content="https://i.ibb.co/Ng39rZF2/PRAVEEN-3.png">
+    <meta property="og:image:width" content="1080">
+    <meta property="og:image:height" content="1080">
+
+    <meta name="twitter:title"
+        content="Praveen and Partners | Enterprise Web Development & Digital Transformation | Award-Winning Solutions">
+    <meta name="twitter:description"
+        content="Award-winning web development by Praveen and Partners. We engineer premium websites, web apps & digital platforms that accelerate growth. Trusted by industry leaders">
+    <meta name="twitter:image" content="https://i.ibb.co/Ng39rZF2/PRAVEEN-3.png">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #000d14;
+            color: #cbd5e1;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        .font-display {
+            font-family: 'Space Grotesk', sans-serif;
+        }
+
+        .prose p {
+            margin-bottom: 2em;
+            line-height: 1.8;
+            color: #94a3b8;
+            font-size: 1.125rem;
+        }
+
+        .prose h2 {
+            color: white;
+            font-size: 2rem;
+            margin-top: 3em;
+            margin-bottom: 1em;
+            font-weight: 500;
+            letter-spacing: -0.02em;
+        }
+
+        .prose h3 {
+            color: #e2e8f0;
+            font-size: 1.5rem;
+            margin-top: 2em;
+            margin-bottom: 0.75em;
+            font-weight: 500;
+        }
+
+        .prose ul {
+            list-style-type: disc;
+            padding-left: 1.5em;
+            margin-bottom: 2em;
+            color: #94a3b8;
+        }
+
+        .prose li {
+            margin-bottom: 0.75em;
+            padding-left: 0.5em;
+        }
+
+        .prose strong {
+            color: #00ed64;
+            font-weight: 500;
+        }
+
+        .table-container {
+            background: #00151e;
+            padding: 2em;
+            border-radius: 0.75rem;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            margin: 2em 0;
+        }
+
+        .prose table {
+            width: 100%;
+            text-align: left;
+            border-collapse: collapse;
+        }
+
+        .prose th {
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            padding-bottom: 1em;
+            color: white;
+        }
+
+        .prose td {
+            padding: 1em 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            color: #94a3b8;
+        }
+
+        .prose td:last-child {
+            color: #00ed64;
+            font-family: monospace;
+        }
+    </style>
+</head>
+
+<body class="bg-[#000d14] antialiased selection:bg-[#00ed64] selection:text-[#001e2b]">
+    <nav class="fixed top-0 w-full z-50 border-b border-[#00ed64]/10 bg-[#000d14]/80 backdrop-blur-md">
+        <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+            <a href="index.html" class="flex items-center group">
+                <img src="./logo.png" alt="Praveen & Partners" class="h-8 w-auto">
+            </a>
+            <div class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-400">
+                <a href="services.html" class="hover:text-[#00ed64] transition-colors">Services</a>
+                <a href="insights.html" class="text-[#00ed64]">Insights</a>
+                <a href="about.html" class="hover:text-[#00ed64] transition-colors">About</a>
+            </div>
+            <a href="contact.html"
+                class="hidden md:flex items-center gap-2 px-4 py-2 rounded-full border border-white/10 bg-white/5 text-white text-xs font-medium hover:bg-[#00ed64] hover:text-[#001e2b] hover:border-[#00ed64] transition-all duration-300">
+                Start Project <iconify-icon icon="solar:arrow-right-linear"></iconify-icon>
+            </a>
+        </div>
+    </nav>
+
+    <article class="pt-40 pb-24 max-w-3xl mx-auto px-6">
+        <div class="mb-16 border-b border-white/10 pb-16">
+            <div class="flex items-center gap-4 text-sm text-[#00ed64] font-mono mb-6">
+                <span>Infrastructure</span>
+                <span>•</span>
+                <span>November 2025</span>
+                <span>•</span>
+                <span>8 Min Read</span>
+            </div>
+            <h1 class="text-5xl md:text-7xl font-display font-medium text-white mb-8 leading-[1.1] tracking-tight">The
+                Rustification of Web Tools</h1>
+            <p class="text-2xl text-slate-400 leading-relaxed font-light">JavaScript is fast enough for interaction, but
+                too slow for compilation. The entire web build chain is being rewritten in Rust.</p>
+        </div>
+
+        <div class="prose">
+            <p>For a long time, the tools we used to write JavaScript were themselves written in JavaScript. Webpack,
+                Babel, ESLint, Prettier—they all ran on Node.js. And for a long time, that was fine. But as applications
+                grew to tens of thousands of modules, the cracks started to show.</p>
+
+            <p>Waiting 30 seconds for a dev server to start or 5 minutes for a CI build to complete became the norm.
+                This wasted developer time helps no one. Enter <strong>Rust</strong>.</p>
+
+            <h2>Why Rust?</h2>
+            <p>Rust offers memory safety without garbage collection, meaning it can run incredibly close to the metal
+                with predictable performance characteristics. When you're parsing millions of lines of code in an
+                Abstract Syntax Tree (AST), this performance difference isn't just incremental; it's exponential.</p>
+
+            <h3>The Benchmarks</h3>
+            <p>Let's look at the numbers. Comparing legacy JS tools against their modern Rust counterparts on a large
+                Monorepo with 50,000 components.</p>
+
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Task</th>
+                            <th>Legacy Tool (JS)</th>
+                            <th>Modern Tool (Rust)</th>
+                            <th>Improvement</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Transpilation</td>
+                            <td>Babel (24s)</td>
+                            <td>SWC (0.4s)</td>
+                            <td>60x Faster</td>
+                        </tr>
+                        <tr>
+                            <td>Bundling</td>
+                            <td>Webpack (45s)</td>
+                            <td>Turbopack (2s)</td>
+                            <td>22x Faster</td>
+                        </tr>
+                        <tr>
+                            <td>Linting</td>
+                            <td>ESLint (12s)</td>
+                            <td>Biome (0.2s)</td>
+                            <td>60x Faster</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h2>The New Titans</h2>
+            <h3>1. Turbopack</h3>
+            <p>Developed by Vercel and the creator of Webpack, Turbopack uses a revolutionary specific incremental
+                architecture. It never re-does work. If you change one file, it only re-computes the minimal
+                transformation graph needed for that file. It powers the Next.js dev server, making instant HMR (Hot
+                Module Replacement) a reality regardless of app size.</p>
+
+            <h3>2. Biome (formerly Rome)</h3>
+            <p>Biome is an ambitious project to unify the entire toolchain. Instead of having separate parsers for
+                Prettier (formatting) and ESLint (linting), Biome does both in a single pass. This saves massive amounts
+                of CPU cycles because the code is only parsed into an AST once.</p>
+
+            <h3>3. Rolldown</h3>
+            <p>Evan You, the creator of Vue and Vite, is currently working on Rolldown. It's a Rust port of Rollup.
+                Since Vite is arguably the most popular build tool today, replacing its internal bundler
+                (Rollup/Esbuild) with a unified Rust-based solution will bring massive performance gains to millions of
+                developers.</p>
+
+            <h2>Is JavaScript Dead on the Backend?</h2>
+            <p>No. JavaScript (and TypeScript) remains the best language for expressing product logic. It's flexible,
+                expressive, and easier to hire for. But the <em>infrastructure</em> running that code—the compilers, the
+                linters, the deploy agents—will almost exclusively be written in systems languages like Rust.</p>
+        </div>
+
+        <div class="mt-20 pt-10 border-t border-white/10">
+            <a href="insights.html"
+                class="inline-flex items-center gap-2 text-slate-400 hover:text-white transition group">
+                <iconify-icon icon="solar:arrow-left-linear"
+                    class="group-hover:-translate-x-1 transition-transform"></iconify-icon> Back to Insights
+            </a>
+        </div>
+    </article>
+</body>
+
+</html>
