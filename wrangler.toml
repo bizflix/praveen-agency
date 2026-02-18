@@ -1,0 +1,5 @@
+name = "praveen-agency"
+compatibility_date = "2026-02-18"
+
+[assets]
+directory = "."
